@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/manifest.json">
+    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#212121">
+    <title>The Ecomm Buzz</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/ecomm.css" rel="stylesheet">
+    <script language="javascript" type="text/javascript" src="ecomm.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+<style>
+    ::-webkit-scrollbar{
+        width: 0!important;
+    }
+
+    #scrollPath{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+
+    }
+
+    #progressbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animate 5s linear infinite;
+    }
+
+    @keyframes animate{
+        0%, 100% {
+            filter: hue-rotate(0deg);
+        }
+        50% {
+            filter: hue-rotate(360deg); 
+        }
+    }
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+</style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="scrollPath"></div>
+    <div class="overlay">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                   <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#top">
+                    <span class="light"><img src="css/png/ecomm.png"></span></a>
+                </a>
+            </div>
+
+            <!-- Collect the nav links-->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li -->
+                    <li class="hidden">
+                        <a href="#top"></a>
+                    </li>
+                    <li>
+                        <a href="#tmc">About</a>
+                    </li>
+                    <li>
+                        <a href="#ME">Matrix Ecomm'24</a>
+                    </li>
+                
+                    <li>
+                        <a href="#members">members</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Reach us</a>
+                    </li>
+                    <li>
+                        <a href="./gallery/index.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Matrix Clan</a>
+                    </li>
+                    <li>
+                        <a href="psynapse.html">Psynapse</a>
+                    </li>
+
+                    <li>
+                        <a href="alumni-ecomm.html">past batches</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- main body -->
+    <a name="top"></a>
+    <div class="container-fluid">
+        <div class="main">
+            <img src="css/png/main2.png">
+<!--             <div>
+                <a href="#tmc" class="scroll-down"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+            </div> -->
+        </div>
+    </div>
+
+    <a name="tmc"></a>
+
+    <div class="about">
+        <div class="sectionhead">
+            <img src="css/png/icon(2)/about2.png">
+            <div class="rectify">
+                <p class="head">ABOUT US</p>
+                <hr class="line" align="left">
+            </div>
+
+        </div>
+
+        <div class="bod">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="bodtext">
+                        The EcommBuzz is the prestigious economics society of Mount St. Mary's School, Delhi Cantt. This dynamic club is designed for students with a keen interest in economics and business and offers them a platform to test and expand their existing knowledge. By fostering a community of like-minded individuals, the club encourages collaborative learning and intellectual growth among its members.
+<br><br>
+Central to club's mission is the development of students' interest in the Economics and Business fields. The club achieves this through a variety of engaging activities such as quizzes, debates, paper presentations, business pitches, and economic analyses. These activities not only provide practical experience but also help students hone their analytical and critical thinking skills, preparing them for future academic and professional endeavors.
+<br><br>
+One of the defining features of the EcommBuzz club is its enduring legacy at Mount St. Mary's School. While the membership may change annually, the buzz of excitement and intellectual curiosity never dies. The club continues to thrive year after year, making EcommBuzz one of the most established and respected societies within the school.
+</p>
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="links" style="bottom: -50px; position:relative;">
+            <a href="https://www.instagram.com/theecommbuzz/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+
+        <div class="bline">
+            <hr style=" background-color: #212121; width: 10%; height: 8px; margin-top:150px; margin-bottom: 0px;" align="center">
+        </div>
+
+
+        <div class="ME">
+            <a name="ME"></a>
+            <div class="sectionhead">
+                <img src="css/png/icon(2)/me.png">
+                <div class="rectify">
+                    <p class="head">matrix ecomm pysnapse</p>
+                    <hr class="line" align="left">
+                </div>
+            </div>
+
+            <div class="bod2">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="bodtext2">
+                            The wait is over. The 24th Bro. Aloysius Matrix Ecomm Psynapse Symposium is back and better than ever! This isn't just any event; it's the most exciting one of the year, showing off skills and smart ideas in many areas. The symposium is all about getting people interested in Computer Science, Economics, and Psychology, and finding the best young talents from around the world. Participants will face tough challenges in technology, business, economics, and psychology.
+<br><br>
+                            What makes this symposium special is that there’s no help given; you have to rely on your own skills and determination. Only the best will succeed, making it a true test of talent and expertise. The stakes are high, and it's a place where only the exceptional thrive.
+        <br><br>                    
+                            This year's symposium will be an unforgettable experience with chances for learning, meeting new people, and showing off your talents. It’s not just an event; it’s a journey of growth and excellence. There’s no reason to miss it. Get ready to challenge yourself and rise to the occasion because in this arena, every moment counts. After all, this is bat country.</div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <div class="butn">
+                <a href="ME/Final1.pdf" class="hvr-bounce-to-bottom" target="_blank">Events</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <a href="ME/" class="hvr-bounce-to-bottom">Register</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a href="https://discord.gg/2BDdP9TtRe" class="hvr-bounce-to-bottom" target="_blank">Join Discord</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://linktr.ee/matrix.msm" class="hvr-bounce-to-bottom" target="_blank">Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="ME/results/" class="hvr-bounce-to-bottom" target="_blank">Results</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./gallery/index.html" class="hvr-bounce-to-bottom">Gallery</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+        <div class="bline">
+            <hr style=" background-color: #212121; width: 10%; height: 8px; margin-top: 125px; margin-bottom: 0px;" align="center">
+        </div>
+
+
+        <div class="members">
+            <a name="members"></a>
+            <div class="anim">
+                <div class="sectionhead">
+                    <img src="css/png/icon(2)/member.png">
+                    <div class="rectify">
+                        <p class="head">members</p>
+                        <hr class="line" align="left">
+                    </div>
+                </div>
+
+                <div class="membername">
+
+                    <div class="row">
+                        <div class="secs">
+                            <div class="col-sm-6">
+                                <img src=css/png/ida.png>
+                                <p class="name">PRESIDENT</p>
+                                <p class="pos">IDA KAUSHIK</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src=css/png/swayam.png>
+                                <p class="name">VICE PRESIDENT</p>
+                                <p class="pos">SWAYAM SETH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="secs">
+                            <div class="col-sm-6">
+                                <img src=css/png/banga.png>
+                                <p class="name">GENERAL SECRETARY</p>
+                                <p class="pos">ANISCHKA BANGA</p>
+        
+                            </div>
+                            <div class="col-sm-6">
+                                <img src=css/png/aryan.png>
+                                <p class="name">JOINT SECRETARY</p>
+                                <p class="pos">ARYAN THAKUR</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                        <div class="bline">
+                            <hr style=" background-color: #212121; width: 10%; height: 8px; margin-top: 125px; margin-bottom: 0px;" align="center">
+                        </div>
+
+                        <div class="reachus">
+                            <a name="contact"></a>
+                            <div class="sectionhead">
+                                <img src="css/png/icon(2)/reach.png">
+                                <div class="rectify">
+                                    <p class="head">REACH US</p>
+                                    <hr class="line" align="left">
+                                </div>
+                            </div>
+
+                            <div class="bod3">
+
+                                <div class="mapimg">
+                                    <iframe src="map2.html" class="map"></iframe>
+                                </div>
+
+                            </div>
+
+                            <div class="contdetails">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="icon">
+                                            <div class="iconbg"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                        </div>
+                                        <div class="para">
+                                            Mount St Mary's School
+                                            <br> 75, Parade Road
+                                            <br> Delhi Cantt
+                                            <br> New Delhi - 110010
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="icon">
+                                            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="para">
+                                            <a href="mailto:ecommbuzz2024@gmail.com">ecommbuzz2024@gmail.com</a><br>
+                                            <a href="mailto:msmschool1963@gmail.com">msmschool1963@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="icon">
+                                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="para">
+                                            <a href="tel:011-25515887">Phone - 011-25515887</a>
+                                            <br>
+                                            <a href="tel:011-25368038">Fax - 011-25368038</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style=" background-color: #212121; width: 10%; height: 8px; margin-top: 75px; margin-bottom: 0px;" align="center">
+
+                        <div class="bottom">
+                            <div class="mlogo">
+                                <img src="css/png/ecomm.png" class="img-responsive">
+                            </div>
+
+                            <div class="links">
+                                <a href="https://www.instagram.com/theecommbuzz/" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <p class="heading">
+                                The Buzz Never Dies
+                            </p>
+                            <p class="copyright">
+                                <i class="fa fa-copyright" aria-hidden="true"></i> All Rights Reserved
+                                <br> 2024-2025 <br><br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="js/nav.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
