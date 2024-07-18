@@ -37,7 +37,6 @@ function Symbol(t, e, i, n, r) {
     (this.rain = function () {
       this.y > height + letterScale ? (this.y = 0) : (this.y += this.speed);
       this.opacity = map(this.y, 0, height, 255, 0); // Adjust opacity based on position
-
     });
 }
 function Stream() {
@@ -57,7 +56,7 @@ function Stream() {
       this.symbols.forEach(function (t) {
         t.firstLetter
           ? fill(140, 255, 170, t.opacity)
-          : fill(0, 255, 17, t.opacity),
+          : fill(0, 255, 70, t.opacity),
           text(t.value, t.x, t.y),
           t.rain(),
           t.generateRandom();
