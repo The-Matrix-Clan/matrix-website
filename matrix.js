@@ -1,5 +1,5 @@
 var streams = [],
-  letterScale = 23;
+  letterScale = 30;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   for (var t = 0, e = 0; e <= width / letterScale; e++) {
