@@ -1,79 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.grid {
+  --size: 80vmin;
+
+  display: grid;
+  width: var(--size);
+  aspect-ratio: 1;
+  grid-template-columns: repeat(var(--n), 1fr);
+  cursor: pointer;
+}
+.cell {
+  --abs-i: max(var(--ki, 0) - var(--i), var(--i) - var(--ki, 0));
+  --abs-j: max(var(--kj, 0) - var(--j), var(--j) - var(--kj, 0));
+  --rel-i: calc(var(--abs-i) / var(--n));
+  --rel-j: calc(var(--abs-j) / var(--n));
+  --sum: calc(var(--rel-i) * var(--rel-i) + var(--rel-j) * var(--rel-j));
+  --sqr: var(--sum);
+  display: grid;
+  transform-style: preserve-3d;
+  animation: m1 0.4s calc(var(--sqr) * 0.6s) both;
+}
+.cell:before,
+.cell:after {
+  content: "";
+  grid-area: 1/1;
+  background: var(--img1) calc(var(--i) / var(--n) * 100%)
+    calc(var(--j) / var(--n) * 100%) / var(--size) var(--size);
+  backface-visibility: hidden;
+}
+.cell:after {
+  background-image: var(--img2);
+  transform: rotateY(180deg);
+}
+input:checked + label .cell {
+  animation-name: m2;
+}
+@keyframes m1 {
+  0% {
+    transform: perspective(300px) scale(1.05) rotateY(0deg);
+  }
+  to {
+    transform: perspective(300px) scale(1.05) rotateY(180deg);
+  }
+}
+@keyframes m2 {
+  0% {
+    transform: perspective(300px) scale(1.05) rotateY(180deg);
+  }
+  to {
+    transform: perspective(300px) scale(1.05) rotateY(0deg);
+  }
+}
+
+@supports (z-index: sqrt(4)) {
+  .cell {
+    --sqr: sqrt(var(--sum));
+  }
+}
 
 body {
-  background-color: black;
-  font-family: "Poppins", sans-serif !important;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #c4eeff;
 }
-
-.text-green {
-  color: rgba(0, 255, 81, 0.75);
-}
-
-.hover-overlay {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.relative:hover .hover-overlay {
-  visibility: visible;
-  opacity: 1;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery-item .hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  text-align: center;
-  border: 4px solid #e5e7eb; /* TailwindCSS border-gray-200 */
-}
-
-.gallery-item h2,
-.gallery-item h1,
-.gallery-item p {
-  margin: 0;
-}
-
-.gallery-item h2 {
-  margin-bottom: 10px;
-  font-size: 0.875rem; /* TailwindCSS text-sm */
-  color: #ef4444; /* TailwindCSS text-red-500 */
-}
-
-.gallery-item h1 {
-  margin-bottom: 15px;
-  font-size: 1.125rem; /* TailwindCSS text-lg */
-  color: #1f2937; /* TailwindCSS text-gray-900 */
-}
-
-.gallery-item p {
-  font-size: 0.875rem; /* TailwindCSS text-sm */
-  color: #4b5563; /* TailwindCSS text-gray-600 */
+input {
+  display: none;
 }
