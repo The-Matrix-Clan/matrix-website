@@ -1,5 +1,5 @@
 var streams = [],
-  letterScale = 30;
+  letterScale = 22;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   for (var t = 0, e = 0; e <= width / letterScale; e++) {
@@ -37,6 +37,7 @@ function Symbol(t, e, i, n, r) {
     (this.rain = function () {
       this.y > height + letterScale ? (this.y = 0) : (this.y += this.speed);
       this.opacity = map(this.y, 0, height, 255, 0); // Adjust opacity based on position
+      
     });
 }
 function Stream() {
@@ -63,3 +64,5 @@ function Stream() {
       });
     });
 }
+
+
