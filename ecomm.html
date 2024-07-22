@@ -85,28 +85,6 @@
     <div id="scrollPath"></div>
     <div class="overlay">
     <!-- Navigation -->
-<audio id="background-music" loop>
-    <source src="css/png/matrix.wav" type="audio/wav">
-</audio>
-
-<script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-        var audio = document.getElementById("background-music");
-        
-        // Check for browser restrictions on autoplay
-        var playPromise = audio.play();
-        
-        if (playPromise !== undefined) {
-            playPromise.then(() => {
-                // Autoplay started successfully
-            }).catch((error) => {
-                // Autoplay was prevented
-                // Show a play button to start the audio manually
-                console.log("Autoplay prevented. Show a play button.");
-            });
-        }
-    });
-</script>
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
