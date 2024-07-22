@@ -26,7 +26,7 @@ function Symbol(t, e, i, n, r) {
     (this.interval = round(random(3, 30))),
     (this.generateRandom = function () {
       frameCount % this.interval == 0 &&
-        (this.value = String(round(random(0, 8))));
+        (this.value = String(round(random(0, 1))));
     }),
     (this.render = function () {
       this.generateRandom(),
