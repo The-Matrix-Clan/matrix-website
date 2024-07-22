@@ -29,7 +29,7 @@ function Symbol(t, e, i, n, r) {
     (this.interval = round(random(3, 30))),
     (this.generateRandom = function () {
       if (frameCount % this.interval == 0) {
-        this.value = ['P','s','y','n','a','p','s','e'];
+        this.value = random(['P','s','y','n','a','p','s','e']);
       }
     }),
     (this.render = function () {
