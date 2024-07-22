@@ -3,52 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Grid</title>
-    <style>
-      :root {
-        --n: 14;
-        --images: url("images/gallery-1.jpg"), url("images/gallery-2.jpg"),
-          url("images/gallery-3.jpg"), url("images/gallery-4.jpg"),
-          url("images/gallery-5.jpg"), url("images/gallery-6.jpg"),
-          url("images/gallery-7.jpg"), url("images/gallery-8.jpg"),
-          url("images/gallery-9.jpg");
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(var(--n), 1fr);
-        grid-template-rows: repeat(var(--n), 1fr);
-        width: 100vw;
-        height: 100vh;
-      }
-      .cell {
-        background: var(--images);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      .cell:hover {
-        background-image: var(--images);
-        /* Add hover effects if needed */
-      }
-    </style>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./style.scss" />
   </head>
   <body>
-    <input type="checkbox" id="image" />
-    <label class="grid" for="image">
-      <!-- Loop to create grid cells -->
-      <script>
-        const n = 14;
-        const grid = document.querySelector(".grid");
-        for (let j = 0; j < n; j++) {
-          for (let i = 0; i < n; i++) {
-            const cell = document.createElement("div");
-            cell.className = "cell";
-            cell.style.setProperty("--i", i);
-            cell.style.setProperty("--j", j);
-            grid.appendChild(cell);
-          }
-        }
-      </script>
-    </label>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg"
+        />
+        <div class="card__head">Plotting Cat</div>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg"
+        />
+        <div class="card__head">Angry Cat</div>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG"
+        />
+        <div class="card__head">Curious Cat</div>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg"
+        />
+        <div class="card__head">Prowling Cat</div>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg"
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg"
+        />
+        <div class="card__head">Sleepy Cat</div>
+      </div>
+    </div>
   </body>
 </html>
