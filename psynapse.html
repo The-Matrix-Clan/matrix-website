@@ -27,59 +27,59 @@
     <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
     <script language="javascript" type="text/javascript" src="psynapse.js"></script>
     <canvas id="synthwaveCanvas"></canvas>
-<style>
-    ::-webkit-scrollbar{
-        width: 0!important;
-    }
+    <style>
+        ::-webkit-scrollbar{
+            width: 0!important;
+        }
 
-    #scrollPath{
-        position: fixed;
+        #scrollPath{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+
+        }
+
+        #progressbar{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate{
+            0%, 100% {
+                filter: hue-rotate(0deg);
+            }
+            50% {
+                filter: hue-rotate(360deg); 
+            }
+        }
+    #progressbar:before{
+        content: '';
+        position: absolute;
         top: 0;
-        right: 0;
-        width: 10px;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.05);
-
-    }
-
-    #progressbar{
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 10px;
+        left: 0;
+        width: 100%;
         height: 100%;
         background: linear-gradient(to top, #008aff, #00ffe7);
-        animation: animate 5s linear infinite;
+        filter: blur(10px);
     }
-
-    @keyframes animate{
-        0%, 100% {
-            filter: hue-rotate(0deg);
-        }
-        50% {
-            filter: hue-rotate(360deg); 
-        }
+    #progressbar:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
     }
-#progressbar:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(10px);
-}
-#progressbar:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(30px);
-}
-</style>
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -130,7 +130,7 @@
                         <a href="#tmc">About</a>
                     </li>
                     <li>
-                        <a href="#ME">Matrix Ecomm'25</a>
+                        <a href="#ME">MEP'25</a>
                     </li>
                 
                     <li>
@@ -237,12 +237,18 @@
 
             <div class="butn">
                     <a href="ME/Matrix-Ecomm-Psynase-Invite.pdf" class="hvr-bounce-to-bottom" target="_blank">Events</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- <a href="ME/" class="hvr-bounce-to-bottom">Register</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                    <a href="https://discord.gg/NKhshGS79e" class="hvr-bounce-to-bottom" target="_blank">Join Discord</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="ME/MEP 2025 COMPILED RESULT.pdf" class="hvr-bounce-to-bottom" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="./gallery/gallery" class="hvr-bounce-to-bottom">Gallery</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegks-jwnq1hCOSVp5EtPcrrKWBf3a9-8rU_mGWoiftNfHpBA/viewform?usp=dialog" class="hvr-bounce-to-bottom">Register</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://discord.gg/mep2025" class="hvr-bounce-to-bottom" target="_blank">Join Discord</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--<a href="ME/MEP 2025 COMPILED RESULT.pdf" class="hvr-bounce-to-bottom" target="_blank">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                    <a href="https://gallery.thematrixclan.com" class="hvr-bounce-to-bottom">Gallery</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p><br></p>
+
+                    <div class="links" style="bottom: -50px; position:relative;">
+                        <a href="https://www.instagram.com/thematrixclan.msm/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
             </div>
-        </div>
 
         <div class="bline">
             <hr style=" background-color: #212121; width: 10%; height: 8px; margin-top: 125px; margin-bottom: 0px;" align="center">
@@ -265,14 +271,14 @@
                     <div class="row">
                         <div class="secs">
                             <div class="col-sm-6">
-                                <img src=css/png/renu.jpeg>
+                                <img src=css/png/psy-prez.jpeg>
                                 <p class="name">PRESIDENT</p>
                                 <p class="pos">RENU PAWAR </p>
                             </div>
                             <div class="col-sm-6">
-                                <img src=css/png/doel.jpeg>
+                                <img src=css/png/psy-vprez.jpeg>
                                 <p class="name">VICE PRESIDENT</p>
-                                <p class="pos">DOYEL BISHNOI </p>
+                                <p class="pos">DOYEL BISHNOI</p>
                             </div>
                         </div>
                     </div>
@@ -280,13 +286,13 @@
                     <div class="row">
                         <div class="secs">
                             <div class="col-sm-6">
-                                <img src=css/png/mannat.jpeg>
+                                <img src=css/png/psy-gensec.jpeg>
                                 <p class="name">GENERAL SECRETARY</p>
-                                <p class="pos">MANNAT </p>
+                                <p class="pos">MANNAT</p>
         
                             </div>
                             <div class="col-sm-6">
-                                <img src=css/png/alina.jpeg>
+                                <img src=css/png/psy-jointsec.jpeg>
                                 <p class="name">JOINT SECRETARY</p>
                                 <p class="pos">ALINA WILSON</p>
                             </div>
@@ -335,7 +341,7 @@
                                             <i class="fa fa-envelope-square" aria-hidden="true"></i>
                                         </div>
                                         <div class="para">
-                                            <a href="mailto:psyynapse.msm@gmail.com">psynapse2025@gmail.com</a><br>
+                                            <a href="mailto:psynapse2025@gmail.com">psynapse2025@gmail.com</a><br>
                                             <a href="mailto:msmschool1963@gmail.com">msmschool1963@gmail.com</a>
                                         </div>
                                     </div>

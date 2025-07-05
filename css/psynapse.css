@@ -446,18 +446,20 @@ a:visited {
   width: 250px;
   height: 50px;
   padding-top: 4px;
+  margin-top: 30px;
+  margin-left: 60px;
   font-size: 28px;
   border-color: #212121;
   border-width: 4px;
-  font-family: "Cybero";
-  background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+  font-family: 'Cybero';
+  background: linear-gradient(to right, #ffffff, #b4b4b4, #ffffff);
   color: #000000;
   border-radius: 10px;
   position: relative;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 .hvr-bounce-to-bottom:before {
   content: "";
@@ -467,7 +469,7 @@ a:visited {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, #888888, #5c5c5c, #888888);
+  background: linear-gradient(to right, #3f3f3f, #252525, #3f3f3f);
   border-radius: 10px;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -475,8 +477,8 @@ a:visited {
   transform-origin: 50% 0;
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
