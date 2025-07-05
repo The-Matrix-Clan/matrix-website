@@ -10,6 +10,12 @@
 }
 @font-face {
   font-family: 'BodyFont';
+  src: url('../fonts/Minecraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Monocode';
   src: url('../fonts/Monocode.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
