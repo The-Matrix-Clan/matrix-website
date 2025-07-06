@@ -384,6 +384,22 @@ a:visited {
     margin-bottom: 0;
     padding-top: 50px;
   }
+  .bodtext {
+  font-family: "BodyFont";
+  font-weight: 300;
+  font-size: 20px;
+  color: #00a2ff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  }
+  .bodtext2 {
+  font-family: "BodyFont";
+  font-weight: 300;
+  font-size: 20px;
+  color: #00a2ff;
+  text-align: center;
+  }
   .line {
     background-color: rgba(255, 255, 255, 0.75);
     width: 60px;
@@ -427,7 +443,6 @@ a:visited {
   font-weight: 300;
   font-size: 23px;
   color: #00a2ff;
-  text-align: left;
 }
 .butn {
   display: block;

@@ -29,7 +29,8 @@ function Symbol(t, e, i, n, r) {
     (this.interval = round(random(3, 30))),
     (this.generateRandom = function () {
       if (frameCount % this.interval == 0) {
-        this.value = random(['P','s','y','n','a','p','s','e']);
+        //this.value = random(['P','s','y','n','a','p','s','e']);
+        this.value = random(['c', 'o', 'g', 'n', 'i', 't', 'i', 'o', 'n', 'e', 'm']); //cognition + emotion
       }
     }),
     (this.render = function () {
