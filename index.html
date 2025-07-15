@@ -26,6 +26,7 @@
     <link href="css/matrix.css" rel="stylesheet">
     <script language="javascript" type="text/javascript" src="matrix.js"></script>
     <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" src="particles.js"></script>
 
     <style>
         ::-webkit-scrollbar {
@@ -83,8 +84,7 @@
     </style>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<body id="page-top matrix" data-spy="scroll" data-target=".navbar-fixed-top">
     <div id="scrollPath"></div>
     <div class="overlay">
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -138,6 +138,7 @@
 
         <!-- main body -->
         <a name="top"></a>
+
         <div class="container-fluid">
             <!-- hero -->
             <div class="main">
@@ -149,7 +150,7 @@
         </div>
 
         <a name="tmc"></a>
-
+        <canvas id="interactive-particles"></canvas>
         <div class="about">
             <div class="sectionhead">
                 <img src="css/png/icon(2)/about2.png">
