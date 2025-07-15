@@ -48,8 +48,9 @@ class InteractiveParticles {
   }
 
   handleMouseMove(e) {
-    this.mouse.x = e.clientX;
-    this.mouse.y = e.clientY;
+    const rect = this.canvas.getBoundingClientRect();
+    this.mouse.x = e.clientX - rect.left;
+    this.mouse.y = e.clientY - rect.top;
   }
 
   animate() {
@@ -80,7 +81,14 @@ class InteractiveParticles {
 
       ctx.beginPath();
       ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0, 255, 65, ${particle.opacity})`;
+      if (document.body.id == "page-top ecomm"){
+        ctx.fillStyle = `rgba(0, 65, 255, ${particle.opacity})`;
+      } else if(document.body.id == "page-top psynapse"){
+        ctx.fillStyle = `rgba(255, 129, 201, ${particle.opacity})`;
+      } else {
+        ctx.fillStyle = `rgba(0, 255, 65, ${particle.opacity})`;
+      }
+      
       ctx.fill();
     });
 
